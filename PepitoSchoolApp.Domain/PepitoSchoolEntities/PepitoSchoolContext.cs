@@ -36,7 +36,7 @@ namespace PepitoSchoolApp.Domain.PepitoSchoolEntities
             {
                 entity.ToTable("Estudiante");
 
-                entity.Property(e => e.Lastnames)
+                entity.Property(e => e.Apellidos)
                     .IsRequired()
                     .HasMaxLength(40)
                     .IsUnicode(false);
@@ -46,17 +46,17 @@ namespace PepitoSchoolApp.Domain.PepitoSchoolEntities
                     .HasMaxLength(12)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Email)
+                entity.Property(e => e.Correo)
                     .IsRequired()
                     .HasMaxLength(100)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Address)
+                entity.Property(e => e.Direccion)
                     .IsRequired()
                     .HasMaxLength(200)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Names)
+                entity.Property(e => e.Nombres)
                     .IsRequired()
                     .HasMaxLength(40)
                     .IsUnicode(false);

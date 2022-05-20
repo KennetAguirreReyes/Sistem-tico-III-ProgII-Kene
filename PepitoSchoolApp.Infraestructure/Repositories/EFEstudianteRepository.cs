@@ -179,11 +179,11 @@ namespace PepitoSchoolApp.Infraestructure.Repositories
                     throw new Exception($"El objeto empleado con esa dni no existe.");
                 }
 
-                estudiante.Names = t.Names;
-                estudiante.Lastnames = t.Lastnames;
-                estudiante.Address = t.Address;
+                estudiante.Nombres = t.Nombres;
+                estudiante.Apellidos = t.Apellidos;
+                estudiante.Direccion = t.Direccion;
                 estudiante.Phone = t.Phone;
-                estudiante.Email = t.Email;
+                estudiante.Correo = t.Correo;
 
                 pepitoschoolDbContext.Estudiantes.Update(estudiante);
                 return pepitoschoolDbContext.SaveChanges();
@@ -201,12 +201,12 @@ namespace PepitoSchoolApp.Infraestructure.Repositories
                 throw new ArgumentNullException("El objeto estudiante no puede ser null.");
             }
 
-            if (string.IsNullOrWhiteSpace(estudiante.Email))
+            if (string.IsNullOrWhiteSpace(estudiante.Correo))
             {
                 throw new Exception("El email no puede ser null o vacio.");
             }
 
-            if (string.IsNullOrWhiteSpace(estudiante.Names))
+            if (string.IsNullOrWhiteSpace(estudiante.Nombres))
             {
                 throw new Exception("El nombre del estudiante no puede ser null o vacio.");
             }

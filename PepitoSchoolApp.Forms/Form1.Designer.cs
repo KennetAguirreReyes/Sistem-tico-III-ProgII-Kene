@@ -48,14 +48,18 @@ namespace PepitoSchoolApp.Forms
             this.dtgvEstudiante = new System.Windows.Forms.DataGridView();
             this.brnEnviar = new System.Windows.Forms.Button();
             this.nudMatematica = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.nudProgramacion = new System.Windows.Forms.NumericUpDown();
+            this.nudContabilidad = new System.Windows.Forms.NumericUpDown();
+            this.nudEstadistica = new System.Windows.Forms.NumericUpDown();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvEstudiante)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMatematica)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudProgramacion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudContabilidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudEstadistica)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNombres
@@ -203,9 +207,9 @@ namespace PepitoSchoolApp.Forms
             // 
             // brnEnviar
             // 
-            this.brnEnviar.Location = new System.Drawing.Point(13, 679);
+            this.brnEnviar.Location = new System.Drawing.Point(3, 3);
             this.brnEnviar.Name = "brnEnviar";
-            this.brnEnviar.Size = new System.Drawing.Size(94, 29);
+            this.brnEnviar.Size = new System.Drawing.Size(85, 42);
             this.brnEnviar.TabIndex = 21;
             this.brnEnviar.Text = "Enviar";
             this.brnEnviar.UseVisualStyleBackColor = true;
@@ -218,37 +222,73 @@ namespace PepitoSchoolApp.Forms
             this.nudMatematica.Size = new System.Drawing.Size(242, 27);
             this.nudMatematica.TabIndex = 22;
             // 
-            // numericUpDown1
+            // nudProgramacion
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(186, 562);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(242, 27);
-            this.numericUpDown1.TabIndex = 23;
+            this.nudProgramacion.Location = new System.Drawing.Point(186, 562);
+            this.nudProgramacion.Name = "nudProgramacion";
+            this.nudProgramacion.Size = new System.Drawing.Size(242, 27);
+            this.nudProgramacion.TabIndex = 23;
             // 
-            // numericUpDown2
+            // nudContabilidad
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(186, 510);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(242, 27);
-            this.numericUpDown2.TabIndex = 24;
+            this.nudContabilidad.Location = new System.Drawing.Point(186, 510);
+            this.nudContabilidad.Name = "nudContabilidad";
+            this.nudContabilidad.Size = new System.Drawing.Size(242, 27);
+            this.nudContabilidad.TabIndex = 24;
             // 
-            // numericUpDown3
+            // nudEstadistica
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(186, 615);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(242, 27);
-            this.numericUpDown3.TabIndex = 25;
+            this.nudEstadistica.Location = new System.Drawing.Point(186, 615);
+            this.nudEstadistica.Name = "nudEstadistica";
+            this.nudEstadistica.Size = new System.Drawing.Size(242, 27);
+            this.nudEstadistica.TabIndex = 25;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
+            this.tableLayoutPanel1.Controls.Add(this.btnEliminar, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.brnEnviar, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnActualizar, 1, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 666);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(272, 48);
+            this.tableLayoutPanel1.TabIndex = 26;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(185, 3);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(84, 42);
+            this.btnEliminar.TabIndex = 23;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Location = new System.Drawing.Point(94, 3);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(85, 42);
+            this.btnActualizar.TabIndex = 22;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1361, 761);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.nudEstadistica);
+            this.Controls.Add(this.nudContabilidad);
+            this.Controls.Add(this.nudProgramacion);
             this.Controls.Add(this.nudMatematica);
-            this.Controls.Add(this.brnEnviar);
             this.Controls.Add(this.dtgvEstudiante);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtDireccion);
@@ -268,11 +308,13 @@ namespace PepitoSchoolApp.Forms
             this.Controls.Add(this.lblNombres);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvEstudiante)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMatematica)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudProgramacion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudContabilidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudEstadistica)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -299,9 +341,12 @@ namespace PepitoSchoolApp.Forms
         private System.Windows.Forms.DataGridView dtgvEstudiante;
         private System.Windows.Forms.Button brnEnviar;
         private System.Windows.Forms.NumericUpDown nudMatematica;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown nudProgramacion;
+        private System.Windows.Forms.NumericUpDown nudContabilidad;
+        private System.Windows.Forms.NumericUpDown nudEstadistica;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }
 
