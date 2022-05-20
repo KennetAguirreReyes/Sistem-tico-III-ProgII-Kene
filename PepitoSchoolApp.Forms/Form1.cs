@@ -53,7 +53,7 @@ namespace PepitoSchoolApp.Forms
             }
             else
             {
-                MessageBox.Show("Debe llenar todos los campos de información", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Debe llenar todos los campos de información", "Error al Ingresar Datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -81,7 +81,7 @@ namespace PepitoSchoolApp.Forms
             }
             else
             {
-                MessageBox.Show("Debe llenar todos los campos de información", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                MessageBox.Show("Debe llenar todos los campos de información", "Error al Ingresar Datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

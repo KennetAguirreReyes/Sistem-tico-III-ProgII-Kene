@@ -207,9 +207,11 @@ namespace PepitoSchoolApp.Forms
             // 
             // brnEnviar
             // 
+            this.brnEnviar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.brnEnviar.ForeColor = System.Drawing.Color.Green;
             this.brnEnviar.Location = new System.Drawing.Point(3, 3);
             this.brnEnviar.Name = "brnEnviar";
-            this.brnEnviar.Size = new System.Drawing.Size(85, 42);
+            this.brnEnviar.Size = new System.Drawing.Size(98, 42);
             this.brnEnviar.TabIndex = 21;
             this.brnEnviar.Text = "Enviar";
             this.brnEnviar.UseVisualStyleBackColor = true;
@@ -256,14 +258,16 @@ namespace PepitoSchoolApp.Forms
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(272, 48);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(299, 48);
             this.tableLayoutPanel1.TabIndex = 26;
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(185, 3);
+            this.btnEliminar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEliminar.ForeColor = System.Drawing.Color.Red;
+            this.btnEliminar.Location = new System.Drawing.Point(213, 3);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(84, 42);
+            this.btnEliminar.Size = new System.Drawing.Size(83, 42);
             this.btnEliminar.TabIndex = 23;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -271,9 +275,11 @@ namespace PepitoSchoolApp.Forms
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(94, 3);
+            this.btnActualizar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnActualizar.ForeColor = System.Drawing.Color.Green;
+            this.btnActualizar.Location = new System.Drawing.Point(108, 3);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(85, 42);
+            this.btnActualizar.Size = new System.Drawing.Size(98, 42);
             this.btnActualizar.TabIndex = 22;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -283,6 +289,7 @@ namespace PepitoSchoolApp.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1361, 761);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.nudEstadistica);
